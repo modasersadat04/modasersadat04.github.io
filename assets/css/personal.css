@@ -1,0 +1,22 @@
+/* Personal palette and accessible CV components; original template retained. */
+:root { --background-color:#0b1628; --surface-color:#142439; --default-color:#d8e2ec; --heading-color:#f4f8fb; --accent-color:#40d6bd; --contrast-color:#092120; --nav-hover-color:#40d6bd; --nav-dropdown-hover-color:#40d6bd; }
+.light-background { --background-color:#101e31; --surface-color:#1e334a; }
+body { font-size:16px; } p { line-height:1.8; }
+.eyebrow { display:block; color:var(--accent-color); font-size:.875rem; letter-spacing:.07em; margin-bottom:1rem; }
+.hero .hero-content h1 { font-size:clamp(2.4rem,5vw,4.4rem); line-height:1.15; }
+.hero .hero-content h2 { font-size:clamp(1.25rem,2.4vw,1.65rem); line-height:1.5; }
+.role-secondary { color:#b2c3d6; } .cv-illustration { width:100%; height:auto; }
+.cv-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.5rem; }
+.cv-card { background:var(--surface-color); border:1px solid #294057; border-radius:16px; padding:1.75rem; }
+.cv-card h2 { font-size:1.35rem; line-height:1.4; } .cv-card p { margin-bottom:0; }
+.cv-button { background:var(--accent-color); color:#092120; padding:.8rem 1.4rem; font-weight:600; }
+.cv-button:hover { background:#7de6d4; color:#092120; }
+.skill-list { line-height:2.2; padding-left:1.2rem; }
+a:focus-visible { outline:3px solid #40d6bd; outline-offset:5px; }
+.skip-link { position:absolute; left:1rem; top:-100px; z-index:10000; background:#fff; color:#0b1628; padding:1rem; }
+.skip-link:focus { top:1rem; }
+.section-title h1 { font-weight:700; margin-bottom:1rem; }
+@media(max-width:767px) { .cv-grid { grid-template-columns:1fr; } .section { padding:45px 0; } .cv-card { padding:1.25rem; } }
+@media(prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto!important; animation:none!important; transition:none!important; } }
+
+.cv-portrait { display:block; width:100%; height:auto; border-radius:24px; border:1px solid #294057; }
